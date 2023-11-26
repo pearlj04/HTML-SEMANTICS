@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML SEMANTICS</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header><h3>&lt;article&gt; element </h3></header>
+        <nav>
+            <a href="index.html"><button class="navBtn">&lt;Section&gt;</button></a>
+            <a href="Article.html"><button class="navBtn">&lt;Article&gt;</button></a>
+            <a href="Header.html"><button class="navBtn">&lt;Header&gt; </button></a>
+            <a href="footer.html"><button class="navBtn">&lt;Footer&gt;</button></a>
+            <a href="nav.html"><button class="navBtn">&lt;Nav&gt;</button></a>
+            <a href="aside.html"><button class="navBtn">&lt;Aside&gt;</button></a>
+        </nav>
+        <section class="explanation">
+            <h3>Explanation:</h3>
+            <b> HTML &lt;article&gt; Element</b>
+            <p>
+                The &lt;article&gt; element specifies independent, self-contained content.<br>
+                An article should make sense on its own, and it should be possible to distribute it independently from the rest of the web site.<br>
+            <br>
+                Examples of where the &lt;article&gt;element can be used:
+            <ul>
+                <li>Forum posts</li>
+                <li>Blog posts</li>
+                <li>User comments</li>
+                <li>Product cards</li>
+                <li>Newspaper articles</li>
+            </ul>        
+            </p>
+        </section>
+        <article class="sample">
+            <h3>Nesting &lt;article&gt; in &lt;section&gt; or Vice Versa?</h3>
+            The &lt;article&gt; element specifies independent, self-contained content.<br>
+            <br>
+            The &lt;section&gt;element defines section in a document.<br>
+             <br>   
+            Can we use the definitions to decide how to nest those elements? No, we cannot!<br>
+             <br>   
+            So, you will find HTML pages with &lt;section&gt; elements containing &lt;article&gt; elements, and &lt;article&gt; elements containing &lt;section&gt; elements.<br>
+        </article>
+        <aside>
+            <h3>SAMPLE CODE:</h3>
+            &lt;!DOCTYPE html&gt;<br>
+            &lt;html&gt;<br>
+            &lt;body&gt;<br>
+            <br>
+            &lt;h1&gt; The article element&lt;/h1&gt;<br>
+            <br>
+            &lt;article&gt; <br>
+            &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&lt;h2&gt; Google Chrome &lt;/h2&gt; <br>
+            &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&lt;p&gt; Google Chrome is a web browser developed by Google, released in 2008. Chrome is the 
+            world's most popular web browser today! &lt;/p&gt; <br>
+            &lt;/article&gt; <br>
+            <br>
+            &lt;/body&gt;<br>
+            &lt;/html&gt;<br>
+            <br>
+            <br>
+            <b> Sample Code 2</b>
+            <br>
+            &lt;!DOCTYPE html&gt;
+            &lt;html&gt;<br>
+            &lt;head&gt;<br>
+            &lt;style&gt;<br>
+           .all-browsers &#123;<br>
+           &nbsp;&nbsp;&nbsp;&nbsp;   margin: 0;<br>
+           &nbsp;&nbsp;&nbsp;&nbsp;   padding: 5px;<br>
+           &nbsp;&nbsp;&nbsp;&nbsp;   background-color: lightgray;<br>
+           &#125;<br>
+           <br>
+           .all-browsers &gt; h1, .browser  &#123; <br>
+           &nbsp;&nbsp;&nbsp;&nbsp;margin: 10px;<br>
+           &nbsp;&nbsp;&nbsp;&nbsp;padding: 5px;<br>
+           &#125;<br>
+
+          .browser &#123; <br>
+          &nbsp;&nbsp;&nbsp;&nbsp;background: white;<br>
+          &#125;<br>
+
+         .browser&gt; h2, p &#123; <br>
+         &nbsp;&nbsp;&nbsp;&nbsp;margin: 4px;<br>
+         &nbsp;&nbsp;&nbsp;&nbsp;font-size: 90%;<br>
+         &#125;<br>
+         <br>
+         &lt;/style&gt;<br>
+         &lt;/head&gt;<br>
+         &lt;/body&gt;<br>
+         &lt;/html&gt;<br>
+     </aside>
+        <footer><p>Pearl Jean  C. Bulawan Anti-Copyright</p></footer>
+    </div>
+    
+</body>
+</html>
